@@ -2,57 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self';">
-    <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FTUS</title>
+    <title>FTUS INAV Website</title>
     <style>
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100%;
-            overflow: hidden;
         }
-
-        .splash {
-            background-image: url('https://inav.ftus.au/ftc_logo.png'); /* Replace with your image URL */
-            background-size: cover;
-            background-position: center;
-            height: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+        nav {
+            background-color: #333;
             color: white;
-            font-family: Arial, sans-serif;
-            font-size: 2em;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-        }
-
-        .enter-site {
-            margin-top: 20px;
-            font-size: 1em;
-            color: white;
-            text-decoration: none;
             padding: 10px 20px;
-            border: 2px solid white;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
+            text-align: center;
+            font-size: 1.2em;
         }
-
-        .enter-site:hover {
-            background-color: white;
-            color: black;
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #f8f8f8;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #333;
+            border-top: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
-    <div class="splash">
-        <div>
-            <h1>Welcome to FTUS</h1>
-            <a href="/home" class="enter-site">Enter Site</a>
-        </div>
-    </div>
+    <nav>INAV</nav>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fund Name</th>
+                    <th>iNAV</th>
+                    <th>Last Updated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fund A</td>
+                    <td>$100.25</td>
+                    <td>10:30 AM</td>
+                </tr>
+      
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <h3>INAV Disclaimer</h3>
+        <p>INAV Disclaimer<br><br>*An indicative NAV per Unit (“iNAV”) for each Fund will be published throughout the Securities exchange trading day. The iNAV is reflective of real-time movements in each Fund's underlying securities. The iNAV represents the best estimate by the Issuer or its appointed agents of the value per unit in each Fund throughout the CBOE trading day. The iNAV published by each Fund is indicative only and might not accurately reflect the underlying value of the Fund. The Issuer or its appointed agents gives no guarantees that the iNAV will be published continuously or that it will be up to date or free from error. To the extent permitted by law, neither the Issuer nor its appointed agent shall be liable to any person who relies on the iNAV.</p>
+    </footer>
 </body>
 </html>
